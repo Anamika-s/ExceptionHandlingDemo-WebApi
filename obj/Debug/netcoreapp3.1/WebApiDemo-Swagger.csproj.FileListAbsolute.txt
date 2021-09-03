@@ -20,7 +20,11 @@ C:\Users\admivm\source\repos\WebApiDemo-Swagger\WebApiDemo-Swagger\bin\Debug\net
 C:\Users\admivm\source\repos\WebApiDemo-Swagger\WebApiDemo-Swagger\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\admivm\source\repos\WebApiDemo-Swagger\WebApiDemo-Swagger\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\admivm\source\repos\WebApiDemo-Swagger\WebApiDemo-Swagger\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\admivm\source\repos\WebApiDemo-Swagger\WebApiDemo-Swagger\obj\Debug\netcoreapp3.1\WebApiDemo-Swagger.csproj.CopyComplete
+C:\Users\admivm\source\repos\WebApiDemo-Swagger\WebApiDemo-Swagger\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\admivm\source\repos\WebApiDemo-Swagger\WebApiDemo-Swagger\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+C:\Users\admivm\source\repos\WebApiDemo-Swagger\WebApiDemo-Swagger\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\admivm\source\repos\WebApiDemo-Swagger\WebApiDemo-Swagger\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\admivm\source\repos\WebApiDemo-Swagger\WebApiDemo-Swagger\obj\Debug\netcoreapp3.1\WebApiDemo-Swagger.csproj.CoreCompileInputs.cache
 C:\Users\admivm\source\repos\WebApiDemo-Swagger\WebApiDemo-Swagger\obj\Debug\netcoreapp3.1\WebApiDemo-Swagger.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\admivm\source\repos\WebApiDemo-Swagger\WebApiDemo-Swagger\obj\Debug\netcoreapp3.1\WebApiDemo-Swagger.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\admivm\source\repos\WebApiDemo-Swagger\WebApiDemo-Swagger\obj\Debug\netcoreapp3.1\WebApiDemo-Swagger.csproj.CopyComplete

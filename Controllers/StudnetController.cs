@@ -4,12 +4,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using WebApiDemo_Swagger.FIlters;
 using WebApiDemo_Swagger.Models;
 
 namespace WebApiDemo_Swagger.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    //[CustomErrorFilter]
+    
     public class StudentController : ControllerBase
     {
         static List<Student> _studentList = null;
@@ -33,27 +36,46 @@ namespace WebApiDemo_Swagger.Controllers
 
         }
         // GET: api/Students
-
+       
         [HttpGet]
-        public IEnumerable<Student> Get()
+       
+        public IActionResult Get()
         {
-            return _studentList;
+            try
+            {
+                throw new Exception("There are no records");
+                return Ok(_studentList);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
         }
         [HttpGet]
         [Route("{id:int}")]
+        //[CustomErrorFilter]
         public Student GetById(int id)
         {
             Student student = _studentList.Where(x => x.StudentId == id).FirstOrDefault();
+            //if (student == null)
+            //    throw new CustomException("This record does not exist");
+            //else 
             return student;
         }
         [HttpPost]
+       
         public void Post(Student student)
         {
-            if (student != null)
+            Student obj = _studentList.FirstOrDefault(x => x.StudentId == student.StudentId);
+            if(obj!=null)
             {
-                _studentList.Add(student);
-            }
+                throw new AlreadyExists("This ID already exists");
 
+            }
+                 else 
+                _studentList.Add(student);
+           
+            
         }
         // PUT: api/Students/5
         [HttpPut]

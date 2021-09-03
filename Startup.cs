@@ -59,11 +59,14 @@ namespace WebApiDemo_Swagger
             {
                 app.UseDeveloperExceptionPage();
             }
+            // app.UseStatusCodePages();
+            app.UseStatusCodePages(
+         "text/plain", "Status code page, status code: {0}");
             app.UseSwagger();
-            //app.UseSwaggerUI(c =>
-            //{
-            //    c.SwaggerEndpoint("/swagger/v1/swagger.json", "MyTestService");
-            //});
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "MyTestService");
+            });
 
             app.UseSwaggerUI(c =>
             {
